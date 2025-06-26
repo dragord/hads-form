@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>HADS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .question { margin-bottom: 20px; }
+        .question h3 { margin-bottom: 5px; }
+        .option { margin-left: 20px; }
+        input[type="text"] { padding: 8px; width: 100%; max-width: 400px; margin-bottom: 20px; }
+        button { padding: 10px 20px; margin-top: 20px; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <form id="hadsForm">
+        <label for="pib"><strong>Прізвище, ім’я, по батькові:</strong></label><br>
+        
+<label for="pib"><strong>Прізвище, ім’я, по батькові:</strong></label><br>
+<input type="text" id="pib" name="pib" placeholder="Введіть ПІБ" required><br><br>
+
+<label for="unit"><strong>Підрозділ:</strong></label><br>
+<input type="text" id="unit" name="unit" placeholder="Введіть підрозділ" required><br><br>
+
+<label for="age"><strong>Вік:</strong></label><br>
+<input type="number" id="age" name="age" min="16" max="99" required><br><br>
+
+<label for="gender"><strong>Стать:</strong></label><br>
+<select id="gender" name="gender" required>
+    <option value="">Оберіть</option>
+    <option value="Чоловіча">Чоловіча</option>
+    <option value="Жіноча">Жіноча</option>
+</select><br><br>
+
+<div class="question">
+<h3>1. Я відчуваю напруженість, мені не по собі:</h3>
+<div class="option"><input type="radio" name="q1" value="3" required> Увесь час</div>
+<div class="option"><input type="radio" name="q1" value="2" required> Часто</div>
+<div class="option"><input type="radio" name="q1" value="1" required> Час від часу, іноді</div>
+<div class="option"><input type="radio" name="q1" value="0" required> Зовсім не відчуваю</div>
+</div>
+<div class="question">
+<h3>2. Те, що приносило мені велике задоволення, і зараз викликає в мене таке ж відчуття</h3>
+<div class="option"><input type="radio" name="q2" value="0" required> Це так</div>
+<div class="option"><input type="radio" name="q2" value="1" required> Напевно, це так</div>
+<div class="option"><input type="radio" name="q2" value="2" required> В дуже малій мірі це так</div>
+<div class="option"><input type="radio" name="q2" value="3" required> Це зовсім не так</div>
+</div>
+<div class="question">
+<h3>3. Я відчуваю страх, здається, що ось-ось щось жахливе може статись</h3>
+<div class="option"><input type="radio" name="q3" value="3" required> Це так, та страх дуже сильний</div>
+<div class="option"><input type="radio" name="q3" value="2" required> Да, це так, але страх не дуже сильний</div>
+<div class="option"><input type="radio" name="q3" value="1" required> Іноді, але це мене не турбує</div>
+<div class="option"><input type="radio" name="q3" value="0" required> Зовсім не відчуваю</div>
+</div>
+<div class="question">
+<h3>4. Я здатний розсміятися та угледіти у тій чи іншій події смішне</h3>
+<div class="option"><input type="radio" name="q4" value="3" required> Це так</div>
+<div class="option"><input type="radio" name="q4" value="2" required> Напевно, це так</div>
+<div class="option"><input type="radio" name="q4" value="1" required> В дуже малій мірі це так</div>
+<div class="option"><input type="radio" name="q4" value="0" required> Це зовсім не так</div>
+</div>
+<div class="question">
+<h3>5. Метушливі думки крутяться у мене в голові</h3>
+<div class="option"><input type="radio" name="q5" value="3" required> Постійно</div>
+<div class="option"><input type="radio" name="q5" value="2" required> Більшу частину часу</div>
+<div class="option"><input type="radio" name="q5" value="1" required> Час від часу і це не так часто</div>
+<div class="option"><input type="radio" name="q5" value="0" required> Тільки іноді</div>
+</div>
+<div class="question">
+<h3>6. Я відчуваю бадьорість</h3>
+<div class="option"><input type="radio" name="q6" value="3" required> Зовсім не відчуваю</div>
+<div class="option"><input type="radio" name="q6" value="2" required> Дуже рідко</div>
+<div class="option"><input type="radio" name="q6" value="1" required> Іноді</div>
+<div class="option"><input type="radio" name="q6" value="0" required> Практично весь час</div>
+</div>
+<div class="question">
+<h3>7. Я можу легко сісти та розслабитись</h3>
+<div class="option"><input type="radio" name="q7" value="0" required> Це так</div>
+<div class="option"><input type="radio" name="q7" value="1" required> Напевно, це так</div>
+<div class="option"><input type="radio" name="q7" value="2" required> Зрідка це так</div>
+<div class="option"><input type="radio" name="q7" value="3" required> Зовсім не можу</div>
+</div>
+<div class="question">
+<h3>8. Мені здається, що я став робити все дуже повільно</h3>
+<div class="option"><input type="radio" name="q8" value="3" required> Практично весь час</div>
+<div class="option"><input type="radio" name="q8" value="2" required> Часто</div>
+<div class="option"><input type="radio" name="q8" value="1" required> Іноді</div>
+<div class="option"><input type="radio" name="q8" value="0" required> Зовсім ні</div>
+</div>
+<div class="question">
+<h3>9. Я відчуваю внутрішню напругу чи тремтіння</h3>
+<div class="option"><input type="radio" name="q9" value="0" required> Зовсім не відчуваю</div>
+<div class="option"><input type="radio" name="q9" value="1" required> Іноді</div>
+<div class="option"><input type="radio" name="q9" value="2" required> Часто</div>
+<div class="option"><input type="radio" name="q9" value="3" required> Дуже часто</div>
+</div>
+<div class="question">
+<h3>10. Я не слідкую за своєю зовнішністю</h3>
+<div class="option"><input type="radio" name="q10" value="3" required> Це так</div>
+<div class="option"><input type="radio" name="q10" value="2" required> Я не приділяю цьому стільки часу, скільки потрібно</div>
+<div class="option"><input type="radio" name="q10" value="1" required> Мені здається, я став менше приділяти цьому уваги</div>
+<div class="option"><input type="radio" name="q10" value="0" required> Я слідкую за собою так, як і раніше</div>
+</div>
+<div class="question">
+<h3>11. Я відчуваю непосидючість, мені постійно треба рухатись</h3>
+<div class="option"><input type="radio" name="q11" value="0" required> Це так</div>
+<div class="option"><input type="radio" name="q11" value="1" required> Напевно, це так</div>
+<div class="option"><input type="radio" name="q11" value="2" required> В деякій мірі це так</div>
+<div class="option"><input type="radio" name="q11" value="3" required> Зовсім не відчуваю</div>
+</div>
+<div class="question">
+<h3>12. Я вважаю,  що мої справи (заняття, хоббі) можуть принести мені відчуття задоволення</h3>
+<div class="option"><input type="radio" name="q12" value="0" required> Точно так, як і звичайно</div>
+<div class="option"><input type="radio" name="q12" value="1" required> Так, але не в тій мірі, як раніше</div>
+<div class="option"><input type="radio" name="q12" value="2" required> Значно менше, ніж звичайно</div>
+<div class="option"><input type="radio" name="q12" value="3" required> Зовсім так не вважаю</div>
+</div>
+<div class="question">
+<h3>13. У мене буває раптове відчуття паніки</h3>
+<div class="option"><input type="radio" name="q13" value="3" required> Дуже часто</div>
+<div class="option"><input type="radio" name="q13" value="2" required> Досить часто</div>
+<div class="option"><input type="radio" name="q13" value="1" required> Не так і часто</div>
+<div class="option"><input type="radio" name="q13" value="0" required> Зовсім не буває</div>
+</div>
+<div class="question">
+<h3>14. Я можу отримати задоволення від цікавої книги, радіо- чи телепрограми</h3>
+<div class="option"><input type="radio" name="q14" value="0" required> Часто</div>
+<div class="option"><input type="radio" name="q14" value="1" required> Іноді</div>
+<div class="option"><input type="radio" name="q14" value="2" required> Зрідка</div>
+<div class="option"><input type="radio" name="q14" value="3" required> Дуже рідко</div>
+</div>
+
+        <button type="submit">Показати результат</button>
+        <button type="button" onclick="window.print()">Зберегти в PDF</button>
+    </form>
+    <div id="result" style="margin-top:30px; font-weight: bold;"></div>
+
+<script>
+function getRecommendations(scoreType, score) {
+    if (score <= 7) {
+        return `<ul>
+            <li>Продовжуйте підтримувати здоровий режим сну, харчування та фізичну активність.</li>
+            <li>Підтримуйте соціальні контакти та хобі.</li>
+            <li>Повторне тестування рекомендовано через 2–4 тижні.</li>
+        </ul>`;
+    } else if (score <= 10) {
+        return `<ul>
+            <li>Рекомендовано дихальні вправи, техніки заземлення, щоденник думок.</li>
+            <li>Консультація психолога бажана для зниження рівня напруги.</li>
+            <li>Повторне тестування — через 1–2 тижні.</li>
+        </ul>`;
+    } else {
+        return `<ul>
+            <li><strong>Обов’язкова бесіда з психологом або психотерапевтом.</strong></li>
+            <li>Застосування стабілізуючих технік: релаксація, CBT-методи, техніки заземлення.</li>
+            <li>Розгляд медичної допомоги (консультація психіатра) за потреби.</li>
+            <li>Динамічне спостереження з повторним тестом через 7–10 днів.</li>
+        </ul>`;
+    }
+}
+
+document.getElementById("hadsForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    let anxiety = 0;
+    let depression = 0;
+    const anxietyIndexes = [1,3,5,7,9,11,13];
+    const depressionIndexes = [2,4,6,8,10,12,14];
+    for (let [key, value] of formData.entries()) {
+        let index = parseInt(key.substring(1));
+        if (anxietyIndexes.includes(index)) anxiety += parseInt(value);
+        if (depressionIndexes.includes(index)) depression += parseInt(value);
+    }
+    function interpret(score) {
+        if (score <= 7) return "норма (0–7)";
+        else if (score <= 10) return "субклінічно виражена (8–10)";
+        else return "клінічно виражена (11 і вище)";
+    }
+    let rec1 = getRecommendations("anxiety", anxiety);
+    let rec2 = getRecommendations("depression", depression);
+    const pib = document.getElementById("pib").value;
+    document.getElementById("result").innerHTML =
+        "<p><strong>ПІБ:</strong> " + pib + "</p>" +
+        "<p>Тривога: <strong>" + anxiety + "</strong> — " + interpret(anxiety) + "<br>" +
+        "Депресія: <strong>" + depression + "</strong> — " + interpret(depression) + "</p>" +
+        "<h4>Рекомендації щодо тривоги:</h4>" + rec1 +
+        "<h4>Рекомендації щодо депресії:</h4>" + rec2;
+});
+</script>
+</body>
+</html>
